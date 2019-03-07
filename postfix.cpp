@@ -22,7 +22,7 @@ int main() {
 			int result = postfixOperation(userInput);	//Return result if successful
         		std::cout << "Result for " << userInput << " = " << result << '\n';
 		}
-        catch (std::string e) {						//If the postfix operation was invalid
+        catch (const std::string& e) {					//If the postfix operation was invalid
         	std::cout << e << '\n';
 		}
 		//Ask again to loop through user (allows enter to be pressed in beginning)
